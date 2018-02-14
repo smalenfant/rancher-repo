@@ -1,0 +1,19 @@
+.catalog:
+  name: Influxdb
+  description: |
+    Influxdb
+  version: 1.3.9
+  minimum_rancher_version: v1.0.0
+  maintainer: "Steve Malenfant <smalenfa@gmail.com>"
+  uuid: influxdb-1
+version: '2'
+services:
+  influxdb:
+    scale: 1
+    start_on_create: true
+    health_check:
+      response_timeout: 2000
+      healthy_threshold: 2
+      port: 8086
+      unhealthy_threshold: 3
+      interval: 2000

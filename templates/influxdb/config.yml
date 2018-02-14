@@ -1,0 +1,5 @@
+name: Test InfluxDB
+description: |
+  (Experimental) InfluxDB
+version: v0.0.1
+category: Monitoring
